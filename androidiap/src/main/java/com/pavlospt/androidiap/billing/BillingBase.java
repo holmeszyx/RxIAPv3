@@ -24,9 +24,11 @@ import java.lang.ref.WeakReference;
 class BillingBase {
 
 	private WeakReference<Context> contextReference;
-
+	private String pkg;
+	
 	public BillingBase(Context context) {
 		contextReference = new WeakReference<>(context);
+		pkg = context.getPackageName();
 	}
 
 	public Context getContext() {
@@ -34,7 +36,7 @@ class BillingBase {
 	}
 
 	protected String getPreferencesBaseKey() {
-		return contextReference.get().getPackageName() + "_preferences";
+		return  pkg + "_preferences";
 	}
 
 	private SharedPreferences getPreferences() {
