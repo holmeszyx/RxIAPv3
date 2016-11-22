@@ -74,7 +74,7 @@ public class BillingProcessor extends BillingBase implements IBillingProcessor{
 	private static final Date dateMerchantLimit1 = new Date(2012, 12, 5); //5th December 2012
 	private static final Date dateMerchantLimit2 = new Date(2015, 7, 20); //21st July 2015
 
-	private static final int PURCHASE_FLOW_REQUEST_CODE = 2061984;
+	private static final int PURCHASE_FLOW_REQUEST_CODE = 28860;
 	private static final String LOG_TAG = "rxiapv3";
 	private static final String SETTINGS_VERSION = ".v1";
 	private static final String RESTORE_KEY = ".products.restored" + SETTINGS_VERSION;
